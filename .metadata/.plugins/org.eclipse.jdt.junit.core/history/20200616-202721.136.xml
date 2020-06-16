@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HomePageTests.testValidarCariinhoZerado_ZeroItensNoCarrinho" project="ecommerce_prestashop" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="homepage.HomePageTests" time="10.313" displayname="HomePageTests" uniqueid="[engine:junit-jupiter]/[class:homepage.HomePageTests]">
+    <testcase name="testValidarCariinhoZerado_ZeroItensNoCarrinho" classname="homepage.HomePageTests" time="10.313" displayname="testValidarCariinhoZerado_ZeroItensNoCarrinho()" uniqueid="[engine:junit-jupiter]/[class:homepage.HomePageTests]/[method:testValidarCariinhoZerado_ZeroItensNoCarrinho()]"/>
+  </testsuite>
+</testrun>

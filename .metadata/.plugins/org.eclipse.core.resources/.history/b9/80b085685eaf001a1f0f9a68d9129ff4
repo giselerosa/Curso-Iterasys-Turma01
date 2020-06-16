@@ -1,0 +1,9 @@
+package base;
+
+public class baseTests {
+	
+	private static WebDriver driver;
+	protected HomePage homePage;
+	
+
+}

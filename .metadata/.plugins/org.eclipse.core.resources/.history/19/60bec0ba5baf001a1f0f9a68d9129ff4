@@ -1,0 +1,13 @@
+package homepage;
+
+public class HomePageTests {
+	
+	@Test
+	public void testcontarProdutos_oitoProdutosDiferentes() {
+	
+		carregarPaginaInicial();
+		assertThat(homePage.contarProdutos(), is (8))
+		
+	}
+	
+}

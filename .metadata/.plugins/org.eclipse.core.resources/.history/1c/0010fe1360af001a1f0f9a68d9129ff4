@@ -1,0 +1,24 @@
+package base;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class baseTests {
+
+	private static WebDriver driver;
+	protected HomePage homePage;
+
+	@BeforeAll
+
+	public static void inicializar() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Tools\\webdrivers\\chrome\\83\\chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+
+	public void carregarPaginaInicial() {
+		driver.get("https://marcelodebittencourt.com/demoprestashop/");
+		homePage = new HomePage(driver);
+	}
+
+}

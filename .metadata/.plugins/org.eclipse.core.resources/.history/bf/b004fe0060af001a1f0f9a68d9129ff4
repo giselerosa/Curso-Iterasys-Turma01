@@ -1,0 +1,15 @@
+package base;
+
+public class baseTests {
+	
+	private static WebDriver driver;
+	protected HomePage homePage;
+	
+	@BeforeAll
+	
+	public static void inicializar() {
+	System.setProperties("webdriver.chrome.driver", "C:\\Tools\\webdrivers\\chrome\\83\\chromedriver.exe");
+	}
+	
+
+}

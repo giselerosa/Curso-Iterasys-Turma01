@@ -1,0 +1,18 @@
+package homepage;
+
+import static	org.hamcrest.MatcherAssert.assertThat;
+import static 	org.hamcrest.Matchers.is;
+import 			org.junit.jupiter.api.test;
+
+
+public class HomePageTests {
+	
+	@Test
+	public void testcontarProdutos_oitoProdutosDiferentes() {
+	
+		carregarPaginaInicial();
+		assertThat(homePage.contarProdutos(), is (8))
+		
+	}
+	
+}
