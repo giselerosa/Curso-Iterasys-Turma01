@@ -86,10 +86,10 @@ public class HomePageTests extends BaseTests {
 		}
 
 		// --Teste
-		// Selecionando o produto
+		// Selecionando produto
 		testValidarDetalhesDoProduto_DescricaoEValorIguais();
 
-		// Selecionar o tamanho
+		// Selecionar tamanho
 		List<String> listaOpcoes = produtoPage.obterOpcoesSelecionadas();
 
 		System.out.println(listaOpcoes.get(0));
@@ -102,16 +102,16 @@ public class HomePageTests extends BaseTests {
 		System.out.println(listaOpcoes.get(0));
 		System.out.println("Tamanho da lista: " + listaOpcoes.size());
 
-		// Selecionar a cor
+		// Selecionar cor
 		produtoPage.selecionarCorPreta();
 
-		// Selecionar a quantidade
+		// Selecionar quantidade
 		produtoPage.alterarQuantidade(quantidadeProduto);
 
 		// Adicionar no carrinho
 		ModalProdutoPage modalProdutoPage = produtoPage.clicarBotaoAddToCart();
 
-		// Validações de resultado
+		// Validações
 
 		assertTrue(modalProdutoPage.obterMensagemProdutoAdicionado()
 				.endsWith("Product successfully added to your shopping cart"));
@@ -138,4 +138,4 @@ public class HomePageTests extends BaseTests {
 
 	}
 
-}
+} 
