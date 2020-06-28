@@ -44,7 +44,7 @@ public class ProdutoPage {
 	public List<String> obterOpcoesSelecionadas() {
 		List<WebElement> elementosSelecionados = encontrarDropdownSize().getAllSelectedOptions();
 
-		List<String> listaOpcoesSelecionadas = new ArrayList();
+		List<String> listaOpcoesSelecionadas = new ArrayList<String>();
 		for (WebElement elemento : elementosSelecionados) {
 			listaOpcoesSelecionadas.add(elemento.getText());
 		}
@@ -68,4 +68,4 @@ public class ProdutoPage {
 		driver.findElement(botaoAddToCart).click();
 		return new ModalProdutoPage(driver);
 	}
-} 
+}
